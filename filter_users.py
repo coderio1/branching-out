@@ -16,7 +16,7 @@ def filter_users_by_name(name):
 
 
 def filter_users_by_age(age):
-    """Filter and print all users whose age matches the given age."""
+    """Filter and print all users whose age matches the given age"""
     with open("../3_17-git-branching/users.json", "r") as file:
         users = json.load(file)
 
