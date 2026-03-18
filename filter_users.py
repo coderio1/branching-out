@@ -3,7 +3,7 @@ import json
 
 def filter_users_by_name(name):
     """Filter and print all users whose name matches the given name
-    (case-insensitive)."""
+    (case-insensitive)"""
     with open("../3_17-git-branching/users.json", "r") as file:
         users = json.load(file)
 
@@ -16,7 +16,7 @@ def filter_users_by_name(name):
 
 
 def filter_users_by_age(age):
-    """Filter and print all users whose age matches the given age."""
+    """Filter and print all users whose age matches the given age"""
     with open("../3_17-git-branching/users.json", "r") as file:
         users = json.load(file)
 
