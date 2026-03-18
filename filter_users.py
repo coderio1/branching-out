@@ -1,10 +1,13 @@
 import json
+import os
+
+USERS_FILE = os.path.join(os.path.dirname(__file__), "users.json")
 
 
 def filter_users_by_name(name):
     """Filter and print all users whose name matches the given name
     (case-insensitive)"""
-    with open("../3_17-git-branching/users.json", "r") as file:
+    with open(USERS_FILE, "r") as file:
         users = json.load(file)
 
     filtered_users = [
@@ -17,7 +20,7 @@ def filter_users_by_name(name):
 
 def filter_users_by_age(age):
     """Filter and print all users whose age matches the given age"""
-    with open("../3_17-git-branching/users.json", "r") as file:
+    with open(USERS_FILE, "r") as file:
         users = json.load(file)
 
     filtered_users = [user for user in users if user["age"] == age]
@@ -29,7 +32,7 @@ def filter_users_by_age(age):
 def filter_users_by_email(email):
     """Filter and print all users whose email matches the given email
     (case-insensitive)."""
-    with open("../3_17-git-branching/users.json", "r") as file:
+    with open(USERS_FILE, "r") as file:
         users = json.load(file)
 
     filtered_users = [
